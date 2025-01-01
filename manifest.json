@@ -2,20 +2,19 @@
     "manifest_version": 1,
     "name": "Fuck off Joris",
     "version": "1.0",
-    "description": "THis is an extension about Joris Bonson, the most irritating creature since salacious b crumb"
+    "description": "THis is an extension about Joris Bonson, the most irritating creature since salacious b crumb",
     "permissions": [
         "activeTab",
         "tabs"
-
     ],
     "background": {
-        "scripts": ["pleasehelpmeimstuckinVSCitsmellslikeshit.js"],
+        "scripts": ["background.js"],
         "persistent": false
     },
     "content_scripts": [
         {
             "matches": ["<all_urls"],
-            "js": ["IMSTILLSTUCKHERE.js"]
+            "js": ["content.js"]
         }
     ]
 }
